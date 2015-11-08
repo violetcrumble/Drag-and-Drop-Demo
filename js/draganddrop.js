@@ -1,5 +1,3 @@
-/// <reference path="../jquery-1.10.2.js" />
-
 /*global options*/
 var DragonFP = (function () {
     var self = this;
@@ -11,12 +9,10 @@ var DragonFP = (function () {
 
         var defaultOptions = {
             showFeatureList: true,                                                          //show list of home options
-            //refreshResults: false,                                                        //load results on same page or new page
             debugMode: true,                                                                //show table with debug options
             showTabs: true,                                                                 //show tabs for singlewide and doublewide
             homeHeight: 15,                                                                 //size of each home section/room
-            imagePath: 'https://www.cmhinfo.com/Content/draganddropsearch/images/',         //path to room image location
-            //imagePath: 'http://localhost:59197/Content/draganddropsearch/images/',
+            imagePath: 'images/',         													//path to room image location
             singleDouble: 'double',                                                         //start with singlewide, doublewide, or tabs for both
             drawDecoration: true,
             drawInstructions: true,
@@ -466,9 +462,6 @@ var DragonFP = (function () {
         }
 
         $('#enum_index').text(enum_index);
-
-        //alert(self.options.postalCode);
-
 
         var homeOptions = {
             LayoutType: enum_index,
